@@ -4,11 +4,30 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
 header{
     background: #1d4354;
 }
 .container-header{
     margin:  0 auto;
+    padding: 0 15px;
+}
+.line{
+    width: 24px;
+    height: 4px;
+    background-color: white;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.2s;
+}
+.search svg{
+    fill:white;
 }
 @media only screen and (max-width:480px){
     .container-header{
@@ -28,6 +47,9 @@ header{
 @media only screen and (max-width:991px){
     .container-header{
         height: 56px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        place-items: center;
     }
 }
 @media only screen and (min-width:992px){
